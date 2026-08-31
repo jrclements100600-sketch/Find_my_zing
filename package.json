@@ -1,0 +1,17 @@
+{
+  "name": "find-my-zing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "expo": "latest",
+    "react": "latest",
+    "react-native": "latest"
+  }
+}
