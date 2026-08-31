@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zing ✦ Meet Someone New</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff7fb, #f5f0ff);
+      color: #222;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .spark {
+      display: inline-block;
+      font-size: 32px;
+      margin-right: 5px;
+    }
+
+    .matches-btn {
+      border: none;
+      background: #222;
+      color: white;
+      padding: 11px 16px;
+      border-radius: 22px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 25px 18px 40px;
+    }
+
+    .welcome {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .welcome h1 {
+      font-size: 28px;
+      margin-bottom: 7px;
+    }
+
+    .welcome p {
+      color: #777;
+    }
+
+    .card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0,0,0,.13);
+      min-height: 560px;
+      position: relative;
+    }
+
+    .photo {
+      height: 390px;
+      background: linear-gradient(135deg, #d9c2ff, #ffc9e4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 110px;
+    }
+
+    .info {
+      padding: 20px;
+    }
+
+    .info h2 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .age {
+      color: #777;
+      font-size: 17px;
+    }
+
+    .bio {
+      margin-top: 12px;
+      color: #555;
+      line-height: 1.45;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .action {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      border: none;
+      background: white;
+      box-shadow: 0 5px 18px rgba(0,0,0,.13);
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .pass {
+      color: #e34b67;
+    }
+
+    .like {
+      color: #7b4dff;
+    }
+
+    .action:active {
+      transform: scale(.92);
+    }
+
+    .counter {
+      text-align: center;
+      color: #999;
+      font-size: 13px;
+      margin-top: 15px;
+    }
+
+    .matches {
+      display: none;
+      background: white;
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.1);
+    }
+
+    .matches h2 {
+      margin-bottom: 15px;
+    }
+
+    .match {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .match-avatar {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d9c2ff, #ffc9e4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+    }
+
+    .video {
+      margin-left: auto;
+      border: none;
+      background: #222;
+      color: white;
+      padding: 9px 12px;
+      border-radius: 18px;
+    }
+
+    .empty {
+      color: #888;
+      text-align: center;
+      padding: 25px 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <span class="spark">✦</span>Zing
+  </div>
+
+  <button class="matches-btn" onclick="showMatches()">
+    Matches
+  </button>
+</header>
+
+<main>
+
+  <section class="
