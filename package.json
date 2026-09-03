@@ -2,19 +2,20 @@
   "name": "find-my-zing",
   "version": "1.0.0",
   "private": true,
- "scripts": {
-  "start": "expo start",
-  "android": "expo start --android",
-  "ios": "expo start --ios",
-  "web": "expo start --web",
-  "build": "expo export --platform web"
-}, 
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "expo export --platform web"
+  },
   "dependencies": {
+    "@expo/metro-runtime": "~6.1.0",
     "@supabase/supabase-js": "latest",
-"expo": "latest",
-"react": "latest",
-"react-native": "latest",
-"react-dom": "19.2.3",
-"react-native-web": "0.21.2"
+    "expo": "~57.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.0",
+    "react-native-web": "0.21.0"
   }
 }
